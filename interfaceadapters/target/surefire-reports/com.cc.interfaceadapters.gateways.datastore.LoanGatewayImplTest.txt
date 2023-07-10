@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cc.interfaceadapters.gateways.datastore.LoanGatewayImplTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.866 s - in com.cc.interfaceadapters.gateways.datastore.LoanGatewayImplTest

@@ -1,8 +1,0 @@
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/gateways/datastore/LoanGatewayImpl.java
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/gateways/datastore/LoanDocument.java
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/gateways/service/FraudCheckServiceResponse.java
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/controllers/CustomerLoanController.java
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/gateways/datastore/LoanRepository.java
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/controllers/CreateLoanRequest.java
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/controllers/CreateLoanResponse.java
-/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/interfaceadapters/src/main/java/com/cc/interfaceadapters/gateways/service/CustomerFraudCheckGatewayImpl.java

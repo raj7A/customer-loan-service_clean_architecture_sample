@@ -1,9 +1,0 @@
-com/cc/usecases/createloanusecase/FraudCheckResponse.class
-com/cc/usecases/createloanusecase/CustomerFraudCheckGateway.class
-com/cc/usecases/properties/UseCaseProperties.class
-com/cc/usecases/createloanusecase/CreateLoanUseCaseImpl.class
-com/cc/usecases/exceptions/CustomerFraudException.class
-com/cc/usecases/createloanusecase/CreateLoanUseCase.class
-com/cc/usecases/createloanusecase/LoanGateway.class
-com/cc/usecases/exceptions/LoanSaveException.class
-com/cc/usecases/createloanusecase/LoanRequest.class
