@@ -1,0 +1,9 @@
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/exceptions/LoanSaveException.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/properties/UseCaseProperties.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/createloanusecase/FraudCheckResponse.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/createloanusecase/LoanRequest.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/createloanusecase/CreateLoanUseCase.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/createloanusecase/CreateLoanUseCaseImpl.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/exceptions/CustomerFraudException.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/createloanusecase/CustomerFraudCheckGateway.java
+/Users/anand.raj/Documents/spaces/intellij/personal/raj7/customer-loan-service/usecases/src/main/java/com/cc/usecases/createloanusecase/LoanGateway.java
