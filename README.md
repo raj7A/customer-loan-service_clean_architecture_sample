@@ -42,6 +42,27 @@ Consider below is the business use case shared by a business team on which this 
 3. **_Independent of Database_** - easily swap the database (like sql, nosql etc) without affecting the Entities & UseCases
 4. **_Independent of external interactions_** - Changes in the external http contract doesn't affect the Entities & UseCases (unless its required to update the domain with business logics) 
 
+# Run commands :
+
+```bash
+    make compile
+```
+```bash
+    make run-all-tests
+```
+```bash
+    make build
+```
+```bash
+    make run-integration-tests
+```
+```bash
+    make run-functional-tests
+```
+```bash
+    make run-unit-tests
+```
+
 # AppMap :
 
 ![](a_docs/images/Dependency_Map.png)
