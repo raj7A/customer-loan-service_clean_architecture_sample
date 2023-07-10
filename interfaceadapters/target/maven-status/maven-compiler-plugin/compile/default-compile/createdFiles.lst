@@ -1,0 +1,14 @@
+com/cc/interfaceadapters/controllers/CustomerLoanController$LoanRequestResponseMapper.class
+com/cc/interfaceadapters/gateways/datastore/LoanGatewayImpl$LoanMapperImpl.class
+com/cc/interfaceadapters/gateways/service/CustomerFraudCheckGatewayImpl.class
+com/cc/interfaceadapters/controllers/CreateLoanRequest.class
+com/cc/interfaceadapters/gateways/datastore/LoanDocument.class
+com/cc/interfaceadapters/gateways/service/CustomerFraudCheckGatewayImpl$FraudCheckResponseMapper.class
+com/cc/interfaceadapters/gateways/service/CustomerFraudCheckGatewayImpl$FraudCheckResponseMapperImpl.class
+com/cc/interfaceadapters/controllers/CustomerLoanController.class
+com/cc/interfaceadapters/controllers/CustomerLoanController$LoanRequestResponseMapperImpl.class
+com/cc/interfaceadapters/controllers/CreateLoanResponse.class
+com/cc/interfaceadapters/gateways/datastore/LoanGatewayImpl.class
+com/cc/interfaceadapters/gateways/datastore/LoanGatewayImpl$LoanMapper.class
+com/cc/interfaceadapters/gateways/datastore/LoanRepository.class
+com/cc/interfaceadapters/gateways/service/FraudCheckServiceResponse.class

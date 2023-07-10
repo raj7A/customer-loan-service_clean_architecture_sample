@@ -1,0 +1,3 @@
+com/cc/interfaceadapters/gateways/datastore/LoanGatewayImplTest.class
+com/cc/interfaceadapters/gateways/service/CustomerFraudCheckGatewayImplTest.class
+com/cc/interfaceadapters/controllers/CustomerLoanControllerTest.class
