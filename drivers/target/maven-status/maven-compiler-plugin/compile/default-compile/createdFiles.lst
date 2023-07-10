@@ -1,0 +1,8 @@
+com/cc/configurations/InterfaceAdapterProperties.class
+com/cc/configurations/ServiceGatewayConfigs.class
+com/cc/configurations/UseCaseConfigs$ConfigMapper.class
+com/cc/configurations/UseCaseConfigs.class
+com/cc/configurations/UseCaseConfigs$ConfigMapperImpl.class
+com/cc/configurations/UseCaseProperties.class
+com/cc/configurations/DataStoreGatewayConfigs.class
+com/cc/CustomerLoanServiceApplication.class
