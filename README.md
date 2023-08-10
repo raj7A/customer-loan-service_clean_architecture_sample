@@ -23,11 +23,6 @@ Consider below is the business use case shared by a business team on which this 
 3. **_InterfaceAdapters_** - The place where implementation for database, http call , interfaces defined in UseCase resides
 4. **_Drivers_** - The place where all the independent components are stitched together to form an application (web)
 
-    Clear boundaries defined :
-    - Entities doesn't know anything about its outer cirlces  (i.e UseCase, InterfaceAdapter, configurations layer).
-    - UseCases doesn't know anything about its outer circles  (i.e InterfaceAdapter, configurations layer), but knows about its inner circles (i.e Entities)
-    - InterfaceAdapter doesn't know anything about is outer circles (i.e Configurations), but knows about its inner circles (i.e Entities, UseCase, InterfaceAdapter layer)
-
 ## Additional test layers :
 1. **_Functional-tests_** - The place where all high-level functional(business use cases) integration tests reside
 2. **_Integration-tests_** - The place where all technical (database/rest integration, retries, timeout etc.) integration tests reside
