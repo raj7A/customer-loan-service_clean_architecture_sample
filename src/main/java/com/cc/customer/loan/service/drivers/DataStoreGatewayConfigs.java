@@ -1,4 +1,4 @@
-package com.cc.customer.loan.service.configurations;
+package com.cc.customer.loan.service.drivers;
 
 import com.cc.customer.loan.service.usecases.createloanusecase.LoanGateway;
 import com.cc.customer.loan.service.interfaceadapters.gateways.datastore.LoanGatewayImpl;

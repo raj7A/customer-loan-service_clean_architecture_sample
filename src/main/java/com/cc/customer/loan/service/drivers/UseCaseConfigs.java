@@ -1,4 +1,4 @@
-package com.cc.customer.loan.service.configurations;
+package com.cc.customer.loan.service.drivers;
 
 import com.cc.customer.loan.service.usecases.createloanusecase.CreateLoanUseCase;
 import com.cc.customer.loan.service.usecases.createloanusecase.CreateLoanUseCaseImpl;
@@ -9,7 +9,7 @@ import org.mapstruct.factory.Mappers;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import static com.cc.customer.loan.service.configurations.UseCaseConfigs.ConfigMapper.CONFIG_MAPPER;
+import static com.cc.customer.loan.service.drivers.UseCaseConfigs.ConfigMapper.CONFIG_MAPPER;
 
 @Configuration
 public class UseCaseConfigs {

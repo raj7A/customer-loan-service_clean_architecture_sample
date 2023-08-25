@@ -1,4 +1,4 @@
-package com.cc.customer.loan.service.configurations;
+package com.cc.customer.loan.service.drivers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
