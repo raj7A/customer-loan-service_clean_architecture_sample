@@ -1,3 +1,5 @@
+# Note : 
+Please refer "multi-module-approach" branch for same code reference developed in maven multi module approach
 
 # Customer Loan service :
 Consider below is the business use case shared by a business team on which this sample application is built :
