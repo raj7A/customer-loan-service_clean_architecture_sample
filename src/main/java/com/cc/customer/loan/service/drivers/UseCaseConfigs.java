@@ -12,12 +12,12 @@ import static com.cc.customer.loan.service.drivers.UseCaseConfigs.ConfigMapper.C
 @Configuration
 public class UseCaseConfigs {
 
-    @Bean(value = CreateLoanUseCase.CreateLoanUseCase)
+    @Bean(value = CreateLoanUseCase.createLoanUseCaseImpl)
     public CreateLoanUseCase createLoanUseCaseBean(CustomerFraudCheckGateway customerFraudCheckGateway, LoanGateway loanGateway, com.cc.customer.loan.service.usecases.properties.UseCaseProperties useCaseProperties) {
         return new CreateLoanUseCaseImpl(customerFraudCheckGateway, loanGateway);
     }
 
-    @Bean(value = CreateLoanUseCase.CreateLoanUseCaseV1)
+    @Bean(value = CreateLoanUseCase.createLoanUseCaseImplV1)
     public CreateLoanUseCase createLoanUseCaseV1(CustomerFraudCheckGateway customerFraudCheckGateway, LoanGateway loanGateway, com.cc.customer.loan.service.usecases.properties.UseCaseProperties useCaseProperties) {
         return new CreateLoanUseCaseImplV1(customerFraudCheckGateway, loanGateway);
     }

@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import static com.cc.customer.loan.service.interfaceadapters.controllers.CustomerLoanController.LoanRequestResponseMapper.LOAN_REQUEST_MAPPER;
-import static com.cc.customer.loan.service.usecases.createloanusecase.CreateLoanUseCase.CreateLoanUseCase;
-import static com.cc.customer.loan.service.usecases.createloanusecase.CreateLoanUseCase.CreateLoanUseCaseV1;
+import static com.cc.customer.loan.service.usecases.createloanusecase.CreateLoanUseCase.*;
 
 @RestController
 public class CustomerLoanController {
@@ -29,7 +28,7 @@ public class CustomerLoanController {
         var loanRequest = LOAN_REQUEST_MAPPER.loanCreateRequestToUseCaseLoanRequest(createLoanRequest);
 
         var createLoanUseCase = createLoanUseCaseFactory.getCreateLoanUseCase(
-                useCaseProperties.newFlowEnabled() ? CreateLoanUseCaseV1 : CreateLoanUseCase);
+                useCaseProperties.newFlowEnabled() ? createLoanUseCaseImplV1 : createLoanUseCaseImpl);
         var loan = createLoanUseCase.createLoan(loanRequest);
 
         return LOAN_REQUEST_MAPPER.loanEntityToLoanResponse(loan);

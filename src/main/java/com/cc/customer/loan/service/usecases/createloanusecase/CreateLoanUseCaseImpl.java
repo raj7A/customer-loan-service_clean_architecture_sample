@@ -2,7 +2,6 @@ package com.cc.customer.loan.service.usecases.createloanusecase;
 
 import com.cc.customer.loan.service.entities.Loan;
 import com.cc.customer.loan.service.entities.LoanFactory;
-import com.cc.customer.loan.service.usecases.properties.UseCaseProperties;
 import com.cc.customer.loan.service.usecases.exceptions.CustomerFraudException;
 import com.cc.customer.loan.service.usecases.exceptions.LoanSaveException;
 
