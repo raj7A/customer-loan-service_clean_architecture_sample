@@ -8,6 +8,7 @@ import java.util.Map;
 @Configuration
 @ConfigurationProperties(prefix = "application.usecase")
 public class UseCaseProperties {
+    private Boolean newFlowEnabled;
     private Map<String, Map<String, String>> feature;
 
     public Map<String, Map<String, String>> getFeature() {
@@ -16,5 +17,13 @@ public class UseCaseProperties {
 
     public void setFeature(Map<String, Map<String, String>> feature) {
         this.feature = feature;
+    }
+
+    public Boolean getNewFlowEnabled() {
+        return newFlowEnabled;
+    }
+
+    public void setNewFlowEnabled(Boolean newFlowEnabled) {
+        this.newFlowEnabled = newFlowEnabled;
     }
 }

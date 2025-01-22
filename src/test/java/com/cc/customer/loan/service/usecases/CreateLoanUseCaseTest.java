@@ -27,14 +27,14 @@ public class CreateLoanUseCaseTest {
     @Mock
     private LoanGateway loanGateway;
     private CreateLoanUseCase createLoanUseCase;
-    private UseCaseProperties useCaseProperties = new UseCaseProperties(new HashMap<>());
+    private UseCaseProperties useCaseProperties = new UseCaseProperties(false, new HashMap<>());
 
     @BeforeEach
     void setUp() {
         HashMap<String, String> carLoanProperties = new HashMap<>();
         carLoanProperties.put("isEnabled", Boolean.TRUE.toString());
         useCaseProperties.feature().put("carLoan", carLoanProperties);
-        createLoanUseCase = new CreateLoanUseCaseImpl(customerFraudCheckGateway, loanGateway, useCaseProperties);
+        createLoanUseCase = new CreateLoanUseCaseImpl(customerFraudCheckGateway, loanGateway);
     }
 
     @Test

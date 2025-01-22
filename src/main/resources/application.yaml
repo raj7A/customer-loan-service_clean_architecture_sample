@@ -23,6 +23,7 @@ spring:
 
 application:
   usecase:
+    newFlowEnabled : false
     feature:
       carLoan:
         isEnabled: true

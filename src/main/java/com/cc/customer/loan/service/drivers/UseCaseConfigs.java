@@ -1,11 +1,9 @@
 package com.cc.customer.loan.service.drivers;
 
-import com.cc.customer.loan.service.usecases.createloanusecase.CreateLoanUseCase;
-import com.cc.customer.loan.service.usecases.createloanusecase.CreateLoanUseCaseImpl;
-import com.cc.customer.loan.service.usecases.createloanusecase.CustomerFraudCheckGateway;
-import com.cc.customer.loan.service.usecases.createloanusecase.LoanGateway;
+import com.cc.customer.loan.service.usecases.createloanusecase.*;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
+import org.springframework.beans.factory.config.ServiceLocatorFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,9 +12,26 @@ import static com.cc.customer.loan.service.drivers.UseCaseConfigs.ConfigMapper.C
 @Configuration
 public class UseCaseConfigs {
 
+    @Bean(value = CreateLoanUseCase.CreateLoanUseCase)
+    public CreateLoanUseCase createLoanUseCaseBean(CustomerFraudCheckGateway customerFraudCheckGateway, LoanGateway loanGateway, com.cc.customer.loan.service.usecases.properties.UseCaseProperties useCaseProperties) {
+        return new CreateLoanUseCaseImpl(customerFraudCheckGateway, loanGateway);
+    }
+
+    @Bean(value = CreateLoanUseCase.CreateLoanUseCaseV1)
+    public CreateLoanUseCase createLoanUseCaseV1(CustomerFraudCheckGateway customerFraudCheckGateway, LoanGateway loanGateway, com.cc.customer.loan.service.usecases.properties.UseCaseProperties useCaseProperties) {
+        return new CreateLoanUseCaseImplV1(customerFraudCheckGateway, loanGateway);
+    }
+
     @Bean
-    public CreateLoanUseCase createLoanUseCaseBean(CustomerFraudCheckGateway customerFraudCheckGateway, LoanGateway loanGateway, UseCaseProperties useCaseProperties) {
-        return new CreateLoanUseCaseImpl(customerFraudCheckGateway, loanGateway, CONFIG_MAPPER.toDomainConfig(useCaseProperties));
+    public com.cc.customer.loan.service.usecases.properties.UseCaseProperties createUseCaseProperties(UseCaseProperties useCaseProperties) {
+        return CONFIG_MAPPER.toDomainConfig(useCaseProperties);
+    }
+
+    @Bean
+    public ServiceLocatorFactoryBean getFulfilmentCheckProcessorFactoryBean() {
+        ServiceLocatorFactoryBean serviceLocatorFactoryBean = new ServiceLocatorFactoryBean();
+        serviceLocatorFactoryBean.setServiceLocatorInterface(CreateLoanUseCaseFactory.class);
+        return serviceLocatorFactoryBean;
     }
 
     @Mapper
