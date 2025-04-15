@@ -34,7 +34,16 @@ Consider below is the business use case shared by a business team on which this 
     - InterfaceAdapters doesn't know anything about its outer circles (i.e Drivers), but knows about its inner circles (i.e Entities, UseCases layer)
     - Drivers knows about its inner circles (i.e InterfaceAdapters, Entities, UseCases layer)
 ```
-![img.png](images/Boundaries.png)
+
+## Test segregations :
+
+1. **_Entities_** - pure domain related tests - Restrict for unit tests (mock the dependencies if any) 
+2. **_UseCases_** - pure domain related tests - Restrict for unit tests (mock the dependencies if any)
+3. **_InterfaceAdapters_** -
+   1. high level business use case tests - Includes the integrated functional tests here
+   2. high level technical tests - Includes the tests of database/rest integration, retries, timeout etc.
+4. **_Drivers_** - A simple test to check if application comes up properly by stitching all the layers together
+
 
 # Why Clean Architecture :
 
