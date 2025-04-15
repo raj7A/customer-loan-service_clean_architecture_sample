@@ -25,10 +25,6 @@ Consider below is the business use case shared by a business team on which this 
 3. **_InterfaceAdapters_** - The place where implementation for database, http call , interfaces defined in UseCase resides
 4. **_Drivers_** - The place where all the independent components are stitched together to form an application (web)
 
-## Additional test layers :
-1. **_Functional-tests_** - The place where all high-level functional(business use cases) integration tests reside
-2. **_Integration-tests_** - The place where all technical (database/rest integration, retries, timeout etc.) integration tests reside
-
 ## Boundaries :
 
 ```text
@@ -36,9 +32,7 @@ Consider below is the business use case shared by a business team on which this 
     - Entities doesn't know anything about its outer circles  (i.e UseCases, InterfaceAdapters, configurations layer).
     - UseCases doesn't know anything about its outer circles  (i.e InterfaceAdapters, configurations layer), but knows about its inner circles (i.e Entities)
     - InterfaceAdapters doesn't know anything about its outer circles (i.e Drivers), but knows about its inner circles (i.e Entities, UseCases layer)
-    - Drivers doesn't know anything about Functional-test/Integration-test, but knows about its inner circles (i.e InterfaceAdapters, Entities, UseCases layer)
-    - Functional-tests know every layer
-    - Integration-tests know every layer
+    - Drivers knows about its inner circles (i.e InterfaceAdapters, Entities, UseCases layer)
 ```
 ![img.png](images/Boundaries.png)
 
@@ -49,7 +43,6 @@ Consider below is the business use case shared by a business team on which this 
     1. Separation of concerns of,
         1. business vs technical
         2. framework dependent vs framework in-dependent
-        3. unit tests vs integration tests vs functional tests
 3. **_Refactor friendly_** - Easy to refactor applications (consider scenarios of getting rid of frameworks like reactor/springboot, and this can be done without affecting the domain layers )
 4. **_Independent of external interactions_** - Changes in the external http contract or database doesn't affect the Entities & UseCases (unless its required to update the domain with business logics)
 5. **_Evolving architecture_** -
